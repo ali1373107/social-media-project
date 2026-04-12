@@ -12,7 +12,7 @@ router.get("/byId/:id",async(req,res) =>{
     const post = await Posts.findByPk(id)
     res.json(post);
 });
-
+ 
 router.post("/",async (req,res) =>{
 
     console.log("BODY RECIEVED", req.body)
